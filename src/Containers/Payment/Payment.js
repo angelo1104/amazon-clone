@@ -7,6 +7,7 @@ import {CardElement,useStripe,useElements} from "@stripe/react-stripe-js"
 import CurrencyFormat from "react-currency-format";
 import {getBasketTotal} from "../../reducer";
 import instance from "../../axios";
+import {db} from "../../firebase";
 
 function Payment() {
 
@@ -60,7 +61,7 @@ function Payment() {
             billing_details:billingDetails
         })
 
-        const {error} = await stripe.confirmCardPayment(clientSecret,{
+        const {error, paymentIntent} = await stripe.confirmCardPayment(clientSecret,{
             payment_method:paymentMethodReq.paymentMethod.id
         })
 
@@ -69,6 +70,17 @@ function Payment() {
             setProcessing(false)
             setSucceeded(false)
         }else{
+           await db
+                .collection('users')
+                .doc(user?.uid)
+                .collection('orders')
+                .doc(paymentIntent.id)
+                .set({
+                    basket:basket,
+                    amount: paymentIntent.amount,
+                    created: paymentIntent.created
+                })
+
             setError(null)
             setProcessing(false)
             setSucceeded(true)
