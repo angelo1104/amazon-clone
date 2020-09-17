@@ -152,3 +152,22 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2020-09-17T10:06:45.223Z] [worker-api-38cff72d-73d6-4a5a-ac26-f0793bd9abe2]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-38cff72d-73d6-4a5a-ac26-f0793bd9abe2]: exited"}}
 [debug] [2020-09-17T10:06:45.224Z] [worker-api-38cff72d-73d6-4a5a-ac26-f0793bd9abe2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-38cff72d-73d6-4a5a-ac26-f0793bd9abe2]: FINISHED"}}
 [debug] [2020-09-17T10:06:45.224Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-09-17T11:03:06.609Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-09-17T11:03:07.585Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-09-17T11:03:07.792Z] Accepted request POST /fir-2d14d/us-central1/api/payments/create?total=47800 --> api
+[debug] [2020-09-17T11:03:07.891Z] [worker-pool] Cleaned up workers for api: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for api: 2 --> 1"}}
+[debug] [2020-09-17T11:03:07.915Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2020-09-17T11:03:07.943Z] [worker-api-840ea682-8df7-4767-849f-e43f795ef916]: Assigning socketPath: \\?\pipe\D:\Anupam Karn\Pictures\react\amazon\functions\7300 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-840ea682-8df7-4767-849f-e43f795ef916]: Assigning socketPath: \\\\?\\pipe\\D:\\Anupam Karn\\Pictures\\react\\amazon\\functions\\7300"}}
+[debug] [2020-09-17T11:03:07.968Z] [worker-api-840ea682-8df7-4767-849f-e43f795ef916]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-840ea682-8df7-4767-849f-e43f795ef916]: BUSY"}}
+[debug] [2020-09-17T11:03:09.253Z] [runtime-status] [7300] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [7300] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2020-09-17T11:03:09.705Z] [runtime-status] [7300] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [7300] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2020-09-17T11:03:09.756Z] [runtime-status] [7300] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [7300] Running api in mode HTTPS"}}
+[debug] [2020-09-17T11:03:09.842Z] [runtime-status] [7300] Attempting to listen to socketPath: \\?\pipe\D:\Anupam Karn\Pictures\react\amazon\functions\7300 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [7300] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\Anupam Karn\\Pictures\\react\\amazon\\functions\\7300"}}
+[debug] [2020-09-17T11:03:10.912Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2020-09-17T11:03:11.391Z] [runtime-status] [7300] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [7300] Ephemeral server handling POST request"}}
+[info] >  Payment request received 47800 {"user":"Payment request received 47800","metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"\u001b[90m> \u001b[39m Payment request received 47800"}}
+[debug] [2020-09-17T11:03:11.840Z] [runtime-status] [7300] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [7300] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~3s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~3s"}}
+[debug] [2020-09-17T11:03:13.121Z] [worker-api-840ea682-8df7-4767-849f-e43f795ef916]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-840ea682-8df7-4767-849f-e43f795ef916]: IDLE"}}
+[debug] [2020-09-17T11:03:13.122Z] [work-queue] {"queueLength":0,"workRunningCount":0}
