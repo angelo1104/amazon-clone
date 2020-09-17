@@ -288,3 +288,21 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
 [debug] [2020-09-17T08:49:26.730Z] [worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: IDLE"}}
 [debug] [2020-09-17T08:49:26.730Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-09-17T09:16:54.273Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-09-17T09:16:54.274Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-09-17T09:16:54.274Z] Accepted request POST /fir-2d14d/us-central1/api/payments/create?total=179697 --> api
+[debug] [2020-09-17T09:16:54.274Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2020-09-17T09:16:54.275Z] [worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: Assigning socketPath: \\?\pipe\D:\Anupam Karn\Pictures\react\amazon\functions\5784 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: Assigning socketPath: \\\\?\\pipe\\D:\\Anupam Karn\\Pictures\\react\\amazon\\functions\\5784"}}
+[debug] [2020-09-17T09:16:54.275Z] [worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: BUSY"}}
+[debug] [2020-09-17T09:16:54.278Z] [runtime-status] [5784] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [5784] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2020-09-17T09:16:54.281Z] [runtime-status] [5784] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [5784] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2020-09-17T09:16:54.281Z] [runtime-status] [5784] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [5784] Running api in mode HTTPS"}}
+[debug] [2020-09-17T09:16:54.283Z] [runtime-status] [5784] Attempting to listen to socketPath: \\?\pipe\D:\Anupam Karn\Pictures\react\amazon\functions\5784 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [5784] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\Anupam Karn\\Pictures\\react\\amazon\\functions\\5784"}}
+[debug] [2020-09-17T09:16:54.389Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2020-09-17T09:16:54.394Z] [runtime-status] [5784] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [5784] Ephemeral server handling POST request"}}
+[info] >  Payment request received 179697 {"user":"Payment request received 179697","metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"\u001b[90m> \u001b[39m Payment request received 179697"}}
+[debug] [2020-09-17T09:16:54.398Z] [runtime-status] [5784] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [5784] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2020-09-17T09:16:55.280Z] [worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-6ee86e47-0f7a-4bed-8be7-cfc555669cfc]: IDLE"}}
+[debug] [2020-09-17T09:16:55.281Z] [work-queue] {"queueLength":0,"workRunningCount":0}

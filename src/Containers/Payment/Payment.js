@@ -74,6 +74,10 @@ function Payment() {
             setSucceeded(true)
 
             history.replace("/orders")
+            dispatch({
+                type:"EMPTY_BASKET"
+            })
+
         }
     }
 
